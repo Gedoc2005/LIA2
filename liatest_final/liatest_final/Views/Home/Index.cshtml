@@ -1,0 +1,19 @@
+﻿@model Dictionary<string, string>
+@{
+    ViewBag.Title = "Home Page";
+}
+
+<div class="jumbotron">
+    <table>
+        <tr>
+            <th>Sändningsdetaljer</th>
+        </tr>
+        @foreach (var node in Model)
+        {
+            <tr>
+                <td>@node.Key</td>
+                <td>@node.Value</td>
+            </tr>
+        }
+    </table>
+ </div>
